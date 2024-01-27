@@ -219,7 +219,9 @@ def main(args):
 
     fastllm.set_threads(args.threads)
     fastllm.set_low_memory(args.low)
-    fastllm.set_device_map({"cuda:0" : 10, "cuda:1" : 5, "cpu": 1})
+    # fastllm.set_device_map({"cuda:0" : 10, "cuda:1" : 5, "cpu": 1})
+    fastllm.set_device_map({"cuda:0": 5, "cuda:1": 5})
+
 
 
     global g_model, g_max_batch_size
