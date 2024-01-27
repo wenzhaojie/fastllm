@@ -203,6 +203,12 @@ for response in model.stream_response("你好"):
 
 ## Python绑定API
 
+注意，third_party需要下载
+```
+git submodule update --init --recursive
+```
+
+
 ```
 cd pyfastllm
 export USE_CUDA=OFF    # 只使用CPU，如需使用GPU则去除本行
